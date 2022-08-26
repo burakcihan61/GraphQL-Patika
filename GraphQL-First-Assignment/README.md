@@ -4,7 +4,7 @@
 
 query users{}
 query user(id: 1){}
-
+<br />
 query events{}
 query event(id: 1){}
 query events{
