@@ -1,7 +1,7 @@
 # GraphQL
 
 ## Verilen data üzerinde yapılan işlemler aşağıdaki gibi çıktı vermektedir.
-
+```json
 query users{}
 query user(id: 1){}
 
@@ -29,3 +29,4 @@ query location(id: 1){}
 
 query participants{}
 query participant(id: 1){}
+```
