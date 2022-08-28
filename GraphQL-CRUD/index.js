@@ -290,7 +290,7 @@ const resolvers = {
     // ! Location
     createLocation: (parent, { data }) => {
       const location = { id: uuid(), ...data };
-      events.push(location);
+      locations.push(location);
       return location;
     },
     updateLocation: (parent, { id, data }) => {
