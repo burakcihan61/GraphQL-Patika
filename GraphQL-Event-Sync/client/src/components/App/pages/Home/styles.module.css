@@ -1,0 +1,22 @@
+.listItem{
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 1rem;
+    line-height: 1.5715;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.listItem:hover{
+    color: rgba(0, 0, 0, 0.9);
+}
+.listTitle{
+    margin-bottom: 4px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    line-height: 1.5715;
+}
+.listTitle:hover{
+    color: rgba(0, 0, 0, 0.9) !important;
+}

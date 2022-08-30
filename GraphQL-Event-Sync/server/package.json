@@ -1,0 +1,37 @@
+{
+  "name": "graphql3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "nodemon --exec babel-node ./src/index.js",
+    "build": "babel ./src --out-dir dist --minified --copy-files"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.6.1",
+    "@graphql-tools/merge": "^8.3.4",
+    "@graphql-tools/schema": "^9.0.2",
+    "@graphql-yoga/node": "^2.13.11",
+    "apollo-server": "^3.10.2",
+    "apollo-server-core": "^3.10.2",
+    "graphql": "^16.6.0",
+    "graphql-redis-subscriptions": "^2.5.0",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-yoga": "^2.13.11",
+    "ioredis": "^5.2.3",
+    "nodemon": "^2.0.19",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@babel/node": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "babel-plugin-module-resolver": "^4.1.0"
+  }
+}

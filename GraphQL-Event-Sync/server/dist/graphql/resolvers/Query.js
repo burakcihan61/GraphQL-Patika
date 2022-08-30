@@ -1,0 +1,5 @@
+"use strict";var _data=require("../../data.json");var Query={// ! Events
+events:function events(){return _data.events},event:function event(parent,args){return _data.events.find(function(event){return event.id===parseInt(args.id)})},// ! Users
+users:function users(){return _data.users},user:function user(parent,args){return _data.users.find(function(user){return user.id===parseInt(args.id)})},// ! Participants
+participants:function participants(){return _data.participants},participant:function participant(parent,args){return _data.participants.find(function(participant){return participant.id===parseInt(args.id)})},// ! Locations
+locations:function locations(){return _data.locations},location:function location(parent,args){return _data.locations.find(function(location){return location.id===parseInt(args.id)})}};module.exports=Query;

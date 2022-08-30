@@ -1,0 +1,27 @@
+type Query {
+  eventsyncs: [EventSync!]!
+  eventsync(id: ID!): EventSync!
+}
+type EventSync {
+  id: ID!
+  title: String!
+  desc: String!
+  date: String!
+}
+input CreateEventSyncInput {
+  title: String!
+  desc: String!
+  date: String!
+}
+input UpdateEventSyncInput {
+  title: String!
+  desc: String!
+  date: String!
+}
+
+type Mutation {
+  createEventSync(data: CreateEventSyncInput!): EventSync!
+  updateEventSync(id: ID!, data: UpdateEventSyncInput!): EventSync!
+  deleteEventSync(id: ID!): EventSync!
+  deleteAllEventSync: DeleteAllOutput!
+}

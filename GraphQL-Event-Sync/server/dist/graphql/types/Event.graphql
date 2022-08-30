@@ -1,0 +1,45 @@
+type Query {
+  events: [Event!]!
+  event(id: ID!): Event!
+}
+type Event {
+  id: ID!
+  title: String!
+  desc: String!
+  date: String!
+  to: String!
+  location_id: Int!
+  user_id: ID!
+  users: [User!]!
+  participants: [Participant!]!
+  locations: [Location!]!
+}
+input CreateEventInput {
+  title: String!
+  desc: String!
+  date: String!
+  to: String!
+  location_id: Int!
+  user_id: ID!
+}
+input UpdateEventInput {
+  title: String!
+  desc: String!
+  date: String!
+  to: String!
+  location_id: Int!
+  user_id: ID!
+}
+
+type Mutation {
+  createEvent(data: CreateEventInput!): Event!
+  updateEvent(id: ID!, data: UpdateEventInput!): Event!
+  deleteEvent(id: ID!): Event!
+  deleteAllEvents: DeleteAllOutput!
+}
+
+type Subscription {
+  eventCreated: Event!
+  eventUpdated: Event!
+  eventDeleted: Event!
+}
