@@ -1,0 +1,32 @@
+body {
+  background-color: #282c34;
+  margin-top: 3px;
+}
+
+.ant-menu-item:hover::after {
+  border-bottom-color: bisque !important;
+}
+
+.ant-menu-item-selected:after {
+  border-bottom-color: bisque !important;
+}
+
+.ant-menu-item-selected .ant-menu-title-content a {
+  color: bisque !important;
+}
+
+.ant-menu-item:hover::after .ant-menu-title-content {
+  color: #f8f8f8;
+}
+
+.ant-menu-horizontal > .ant-menu-item a:hover {
+  color: bisque;
+}
+
+.ant-menu-horizontal > .ant-menu-item a {
+  color: #f8f8f8;
+}
+
+.ant-form-item {
+  margin-bottom: 12px;
+}

@@ -1,0 +1,9 @@
+.showParticipantsBtn {
+  text-align: center;
+}
+
+.formCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
